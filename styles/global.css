@@ -1,12 +1,14 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-
+    padding: 0;
 }
 
 @import url(
     'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap'
 );
+
+/* Header */
 
 ul{
     list-style: none;
@@ -15,6 +17,12 @@ ul{
 header{
     display: flex;
     background-color: #2E948A;
+    height: 85px;
+}
+
+section {
+    max-width: 1500px;
+    margin: auto;
 }
 
 .container-header{
@@ -171,58 +179,7 @@ header nav a {
     padding: 30px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:#419488;
-    width: 100%;
-    padding: 20px;
-}
-
-
-
-.footer-button{
-    padding: 5px 0px;
-    cursor: pointer;
-    color: #FFF;
-    text-decoration: none;
-}
-
-.footer-nav{
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-}
-
-.footer-button-link{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 25px;
-    border: #FFF solid 1px;
-    padding: 5px 25px;
-    color: #FFF;
-    margin: 0;
-}
-
-.footer-button-link:hover{
-    background-color: #Fff;
-    color: #419488;
-}
-
-#menu-footer nav a{
-    display: flex;
-    flex-direction: column;
-    color: #FFF;
-    padding: 0px 15px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 20px;
-    text-transform: lowercase;
-    line-height: 22,98px;
-}
+/* conteúdo */
 
 .section-conteudo{
     background-color: #E5E5E5;
@@ -264,4 +221,62 @@ header nav a {
 .conteudo div{
     margin: 30px;
     text-align: left;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#419488;
+    width: 100%;
+    padding: 20px;
+}
+
+#img-footer{
+    width: 100%;
+}
+
+.footer-button{
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-nav{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-button-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    border: #FFF solid 1px;
+    padding: 5px 25px;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-button-link:hover{
+    background-color: #Fff;
+    color: #419488;
+}
+
+#menu-footer nav a{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    text-transform: lowercase;
+    line-height: 22,98px;
 }

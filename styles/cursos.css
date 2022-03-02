@@ -1,0 +1,359 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap'
+);
+
+.titulo-pagina{
+    padding: 2%;
+    margin-left: 5%;
+}
+
+.titulo-pagina h1{
+    color: #FF4081;
+    font-size: 60px;
+}
+.titulo-pagina p{
+    color: #555;
+    font-size: 20px;
+}
+
+
+header{
+    display: flex;
+    background-color: #2E948A;
+    height: 85px;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.logo{
+    margin-left: 82px;
+    max-width: 50%;
+}
+
+.menu nav a{
+    color: #FFF;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+/* Lista de cursos */
+
+.começar-button{
+    border: 2px solid #FF4081;
+    box-sizing: border-box;
+    border-radius: 62px;
+    padding: 5px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #FF4081;
+    transition: 300ms;
+    align-content: center;
+}
+
+.começar-button:hover{
+    background-color: #Fff;
+    color: #FF4081;
+}
+
+.quadros-começar{
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    grid-template-columns: 50% 50%;
+    border-bottom: 2px solid #C4C4C4;
+    padding: 2%;
+    margin: 3%;
+}
+
+.quadros-começar p{
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+}
+
+.quadros-começar a{
+    margin: 25px auto;
+    text-align: center;
+    align-content: center;
+}
+
+.começar-button:hover{
+    background-color: #fff;
+    color: #FF4081;
+}
+
+.quadros-começar h2{
+    margin: 25px auto;
+    text-align: left;
+    align-content: center;
+    color: #FF4081
+}
+
+.quadros-começar div img{
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 50%;
+}
+
+section {
+    max-width: 1500px;
+    margin: auto;
+}
+
+/*      RESPONSIVIDADE     */
+
+/* @media (max-width: 414px) {
+
+    .logo{
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 100px;
+    }
+
+    .menu div nav a {
+        color: #FFF;
+        padding: 0px 15px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    
+    .titulo-pagina h1{
+        font-size: 30px;
+    }
+    .titulo-pagina p{
+        font-size: 12px;
+    }
+
+    .quadros-começar div img{
+        display: block;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 30%;
+    }
+
+    .quadros-começar{
+        padding-bottom: 10%;
+        font-size: 12px;
+    }
+
+    .começar-button{
+        border: 2px solid #FF4081;
+        box-sizing: border-box;
+        border-radius: 62px;
+        padding: 5px 5px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        background-color: #FF4081;
+        transition: 300ms;
+        align-content: center;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:#419488;
+        width: 100%;
+        
+    }
+
+    #menu-footer nav a{
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        padding: 0px 15px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 12px;
+        text-transform: lowercase;
+        line-height: 22,98px;
+    }
+
+    .footer-button{
+        max-width: 80%;
+    }
+
+    #img-footer{
+        max-width: 80%;
+        padding-right: 10%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    header{
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .logo{
+        margin-left: 10px;
+        width: 80px;
+    }
+
+    .menu div nav a {
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .titulo-pagina h1{
+        font-size: 40px;
+    }
+    .titulo-pagina p{
+        font-size: 18px;
+    }
+
+    .quadros-começar{
+        padding-bottom: 5%;
+        font-size: 18px;
+    }
+
+    .quadros-começar div img{
+        display: block;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width: 3000px) {
+
+    .logo{
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 50%;
+    }
+
+    .menu div nav a {
+        color: #FFF;
+        padding: 1%;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .titulo-pagina h1{
+        font-size: 50px;
+    }
+    .titulo-pagina p{
+        font-size: 18px;
+    }
+
+    .quadros-começar{
+        font-size: 18px;
+    }
+
+    .quadros-começar div img{
+        display: block;
+        align-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+        max-width: 80%;
+
+    }
+
+
+
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#419488;
+    width: 100%;
+    padding: 20px;
+}
+
+#img-footer{
+    width: 100%;
+}
+
+.footer-button{
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-nav{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-button-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    border: #FFF solid 1px;
+    padding: 5px 25px;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-button-link:hover{
+    background-color: #Fff;
+    color: #419488;
+}
+
+#menu-footer nav a{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    text-transform: lowercase;
+    line-height: 22,98px;
+}
