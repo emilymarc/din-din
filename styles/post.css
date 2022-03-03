@@ -10,6 +10,7 @@
 
 header{
     background-color: #2E948A;
+    box-sizing: border-box;
     height: 85px;
 }
 
@@ -79,7 +80,7 @@ section{
     align-items: center;
     background-color:#419488;
     width: 100%;
-    padding: 20px;
+    box-sizing: border-box;
 }
 
 #img-footer{
