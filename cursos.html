@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Din Din | Cursos sobre educação financeira</title>
-    <link rel="stylesheet" href="styles/cursos.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dindin | Portal</title>
+    <link rel="stylesheet" href="styles/cursos.css" />
+  </head>
+  <body>
     <header>
-        <div class="container-header">
-            <div>
-                <a href="index.html">
-                    <img class="logo" src="images/logo-header.png" alt="Logo Din Din"/>
-                </a>
-            </div>
-            <div class="menu">
-                <nav>
-                    <a href="cursos.html">CURSOS</a>
-                    <a href="blog.html">BLOG</a>
-                    <a href="contato.html">CONTATO</a>
-                </nav>
-            </div>
+        <div class="container-logo">
+            <img class="logo" src="images/logo-header.png" alt="Logo Dindin" />
+            <nav>
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a class="menu-item-link" href="cursos.html">CURSOS</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-item-link" href="blog.html">BLOG</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-item-link" href="contato.html">CONTATO</a>
+                  </li>
+                </ul>
+              </nav>
         </div>
     </header>
     <main>
 
 
-        <section>
+        <!-- <section> -->
             <div class="titulo-pagina">
                 <h1 >
                     Cursos
@@ -37,7 +39,7 @@
                 </p>
             </div>
             <div class="quadros-começar">
-                <div>
+                <div id="div-img">
                     <img src="images/ilustra-poupando.png" alt="investimento para iniciantes">
                 </div>
                 <div>
@@ -47,11 +49,11 @@
                     </p><br><br>
                     <a class="começar-button">começar agora</a>
                 </div>
-                
-            </div>
             
+            </div>
+            <div><hr></div>
             <div class="quadros-começar">
-                <div>
+                <div id="div-img">
                     <img src="images/ilustra-investimento.png" alt="investimento para iniciantes">
                 </div>
                 <div>
@@ -62,9 +64,9 @@
                     <a class="começar-button">começar agora</a>
                 </div>
             </div>
-
+            <hr>
             <div class="quadros-começar">
-                <div>
+                <div id="div-img">
                     <img src="images/ilustra-independencia.png" alt="indepenencia financeira">
                 </div>
                 <div>
@@ -75,35 +77,35 @@
                     <a class="começar-button">começar agora</a>
                 </div>
             </div>
-        </section>
-
+        
+        <!-- </section> -->
 
     </main>
-</body>
 
-<footer>
-    <div class= 'footer'>
-
-        <div id = 'logo-footer'>
-            <img id = 'img-footer' src="images/logo-footer.png" alt="logo footer dindin"/>
-        </div>
-
-        <div id = 'menu-footer'>
+    <footer>
+        <div class="container-footer">
+            <img src="images/logo-footer.png" alt="Logo Dindin" />
             <nav>
-                <a href="cursos.html">cursos</a>
-                <a href = "blog.html">blog</a>
-                <a href="contato.html">contatos</a>
+                <ul class="menu-footer">
+                    <li>
+                    <a class="menu-item-footer-link" href="cursos.html">cursos</a>
+                    </li>
+                    <li>
+                    <a class="menu-item-footer-link" href="blog.html">blog</a>
+                    </li>
+                    <li>
+                    <a class="menu-item-footer-link" href="contato.html">contato</a>
+                    </li>
+                </ul>
             </nav>
+            <div id="buttons-footer">
+                <a href=""><button class="button">quero ser prof</button></a><br />
+                <a href=""><button class="button">aqui tem outro link</button></a>
+            </div>
         </div>
+    </footer>
 
-        <div class = 'footer-button'>
-            <nav class = 'footer-nav'>
-                <a class = 'footer-button-link'>quero ser professor</a>
-                <br>
-                <a class = 'footer-button-link'>aqui tem outro link</a>
-            </nav>
-        </div>
+  </body>
 
-    </div>
-</footer>
+
 </html>
