@@ -84,6 +84,12 @@ a{
     box-sizing: border-box;
     border-radius: 62px;
     padding: 7px 20px;
+    transition: 300ms;
+}
+
+.button-banner:hover{
+    background-color: #FF4081;
+    color: #fff;
 }
 
 #ilustra-banner{
@@ -259,7 +265,7 @@ main{
     border: 1px solid #FF4081;
     box-sizing: border-box;
     border-radius: 62px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin-top: 5%;
     margin-bottom: 5%;
     transition: 300ms;
@@ -304,11 +310,9 @@ footer{
     margin: 10px 20px;
 }
 
-.button-footer{
-    text-align: left;
-}
 
-.button-footer a{
+
+/* #buttons-footer a{
     text-decoration: none;
     border-style: none;
     background-color: #419488;
@@ -324,13 +328,12 @@ footer{
     transition: 300ms;
 }
 
-.button-footer a:hover{
+#button-footer a:hover{
     background-color: #fff;
     color: #419488;
-}
+} */
 
 .button{
-    font-family: 'Ubuntu', sans-serif;
     border-style: none;
     background-color: #2E948A;
     color: #FFFFFF;
@@ -340,11 +343,16 @@ footer{
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 62px;
-    padding: 10px 40px;
+    padding: 10px 10px;
     height: 40px;
-    width: 250px;
+    width: 100%;
     padding-bottom: 30px;
 }
+
+.button:hover{
+    background-color: #fff;
+    color: #419488;
+} */
 
 #buttons-footer{
     text-align: center;
@@ -380,6 +388,8 @@ footer{
         box-sizing: border-box;
     }
 
+    
+
 }
 
 @media only screen and (max-width: 480px){
@@ -409,6 +419,18 @@ footer{
         flex-direction: column;
     }
 
+    .conteudo a div img{
+        display: none;
+    }
+
+    .conteudo h3{
+        font-size: 15px;
+    }
+
+    #mais-conteudo{
+        flex-direction: column;
+    }
+
     .container-footer{
         flex-direction: column;
     }
@@ -420,6 +442,11 @@ footer{
 }
 
 @media only screen and (max-width: 365px){
+    
+    *{
+        font-size: 12px;
+    }
+
     .logo{
         width: 25%;
 
@@ -443,11 +470,27 @@ footer{
     }
 
     .depoimentos div p{
-        width: 100%;
+        width: 60%;
+        
     }
 
+    #mais-conteudo h1{
+        font-size: 30px;
+        width: 70%;
+    }
+
+    .conteudo h3{
+        font-size: 15px;
+    }
+
+    .depoimentos div h3{
+        width: 70%;
+
+    }
+
+
     .conteudo a div img{
-        width: 90%;
+        display: none;
     }
 
     .container-footer{
