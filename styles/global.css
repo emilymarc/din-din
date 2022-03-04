@@ -170,8 +170,6 @@ main{
 .depoimentos div{
     display: flex;
     flex-wrap: wrap;
-    /* width: 100%;
-    box-sizing: border-box; */
     text-align: left;
     align-items: center;
     margin: 20px 0;
