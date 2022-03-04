@@ -136,6 +136,7 @@ main{
     border-radius: 62px;
     padding: 10px 40px;
     text-decoration: none;
+    transition: 300ms;
 }
 
 .card-curso a:hover{
@@ -261,6 +262,7 @@ main{
     padding: 5px 20px;
     margin-top: 5%;
     margin-bottom: 5%;
+    transition: 300ms;
 }
 
 .button-nav a:hover{
@@ -319,7 +321,7 @@ footer{
     padding: 7px 20px;
     margin-top: 7%;
     margin-bottom: 4%;
-
+    transition: 300ms;
 }
 
 .button-footer a:hover{
