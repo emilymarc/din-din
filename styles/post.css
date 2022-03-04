@@ -1,62 +1,81 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
+*{
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @import url(
     'https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap'
 );
 
-header{
+.container-logo{
     background-color: #2E948A;
-    box-sizing: border-box;
-    height: 85px;
-}
-
-.container-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1500px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0px 3px 7px #8d8d8d;
 }
 
 .logo{
-    margin-left: 82px;
-    max-width: 50%;
+    margin: 2% 5%;
 }
 
-.menu nav a{
-    color: #FFF;
-    padding: 0px 15px;
+nav{
+    text-align: right;
+    margin-right: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
     cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .menu{
-    margin-right: 30px;
+    padding: 0;
+    margin: 0;
 }
+
+.menu-item{
+    display: inline;
+}
+
+.menu-item-link{
+    color: #FDFDFD;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
 
 /* ARTICLE */
 
-.titulo-pagina{
+h2{
     text-align: center;
+    color: #9D9D9D;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 1%;
 }
 
-.titulo-pagina h1{
+h1{
     font-size: 50px;
+    text-align: center;
+    color: #FF4081;
 }
 
 .artigo {
-    text-align: justify;
+    text-align: left;
 }
 
-section{
-    margin: 5%
+article{
+    margin: 5% 10%;
 }
 
 #div-imagem{
@@ -65,67 +84,268 @@ section{
     align-items: center;
 }
 
+#div-imagem{
+    margin: 5% 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
 
+.artigo{
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+}
 
+.artigo p{
+    color: #419488;
+    font-size: 26px;
+    font-weight: 500;
+}
 
+#section-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 2% 0;
+}
 
+.card-curso{
+    margin: 5%;
+    width: 300px;
+}
 
+.card-curso img{
+    box-sizing: border-box;
+    height: 280px;
+}
+
+.card-curso h3{
+    color: #FF4081;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-curso p{
+    font-size: 18px;
+}
+
+.card-curso a{
+    background-color: #FF4081;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 62px;
+    padding: 10px 40px;
+    text-decoration: none;
+    
+}
+
+.card-curso a:hover{
+    background-color: #F6F6F6;
+    color: #FF4081;
+    border: #FF4081 solid 1px;
+}
 
 
 /* FOOTER */
 
-.footer{
+footer{
+    padding: 1% 2%;
+    background-color: #419488;
+}
+
+.container-footer{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    background-color:#419488;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#img-footer{
-    width: 100%;
-}
-
-.footer-button{
-    padding: 5px 0px;
-    cursor: pointer;
-    color: #FFF;
-    text-decoration: none;
-}
-
-.footer-nav{
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-}
-
-.footer-button-link{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 25px;
-    border: #FFF solid 1px;
-    padding: 5px 25px;
-    color: #FFF;
-    margin: 0;
+    align-content: center;
     text-align: center;
+    margin: 3% 5%;
 }
 
-.footer-button-link:hover{
-    background-color: #Fff;
+.container-footer nav{
+    margin: 5%;
+}
+
+.menu-footer li{
+    display: list-item;
+    text-align: left;
+}
+
+.menu-item-footer-link{
+    color: #fff;
+    font-size: 18px;
+    line-height: 25.9px;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.button-footer{
+    text-align: left;
+}
+
+.button-footer a{
+    text-decoration: none;
+    border-style: none;
+    background-color: #419488;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 62px;
+    padding: 7px 20px;
+    margin-top: 7%;
+    margin-bottom: 4%;
+
+}
+
+.button-footer a:hover{
+    background-color: #fff;
     color: #419488;
 }
 
-#menu-footer nav a{
-    display: flex;
-    flex-direction: column;
-    color: #FFF;
-    padding: 0px 15px;
+.button{
+    font-family: 'Ubuntu', sans-serif;
+    border-style: none;
+    background-color: #2E948A;
+    color: #FFFFFF;
+    font-size: 18px;
     cursor: pointer;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 20px;
-    text-transform: lowercase;
-    line-height: 22,98px;
+    margin: 10px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 62px;
+    padding: 10px 40px;
+    height: 40px;
+    width: 250px;
+    padding-bottom: 30px;
+}
+
+#buttons-footer{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 992px){
+
+    h1{
+        font-size: 40px;
+    }
+
+    #div-imagem img{
+        width: 100%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+    #div-imagem img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .logo{
+        width: 30%;
+
+    }
+
+    .menu-item-link{
+        font-size: 18px;
+    }
+
+    .menu-item-link a{
+        font-size: 14px;
+    }
+
+    .menu-item{
+        display: inline;
+        margin-bottom: 30%;
+    }
+
+    .container-logo{
+        flex-direction: column;
+    }
+
+    #div-imagem img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .container-footer img{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 365px){
+    .logo{
+        width: 25%;
+
+    }
+
+    .menu-item-link{
+        font-size: 12px;
+    }
+
+    .menu-item{
+        display: inline;
+        margin-bottom: 30%;
+    }
+
+    #div-imagem img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .artigo p{
+        text-align: left;
+    }
+
+    .container-logo{
+        flex-direction: column;
+    }
+
+    .card-curso img{
+        display: none;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .container-footer img{
+        width: 50%;
+    }
+
 }
